@@ -13,7 +13,7 @@ class Currency {
 
     // Add types to the constructor parameters.
 
-    constructor(name, code, symbol) {
+    constructor(name:string, code:string, symbol:string) {
         this.name = name;
 
         // Store the `code` and `symbol` parameter values in
@@ -28,7 +28,7 @@ class Currency {
     // Add a return type for this method
     // Hint: Look at the inferred return type.
 
-    describe() {
+    public describe() {
         // Replace the `null` values below with the appropriate field values.
         // Hint: Access field values with: this.fieldName
 
@@ -47,6 +47,7 @@ const currencyNaira = new Currency("Naira", "NGN", "₦");
 console.log(currencyNaira);
 
 // Call the `describe()` method on the `currencyNaira` object.
+currencyNaira.describe()
 
 
 
